@@ -1,0 +1,217 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- end -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="sm-nav">
+
+            <div class="contact">
+            <div class="email">alkeshsajeevana@gmail.com</div>
+            <div class="phn">+91 7012787883</div>
+        </div>
+
+        <div class="soc-mid">
+
+            <div class="fb"><a href=""><i class="fa-brands fa-facebook"></i></a></div>
+            <div class="insta"><a href=""><i class="fa-brands fa-instagram"></i></a></div>
+            <div class="twitter"><a href=""><i class="fa-brands fa-twitter"></i></a></div>
+        </div>
+
+        </div>
+       <div class="bg-nav">
+        <div class="nav">
+        <div class="logo"></div>
+        <div class="hcac">
+            <ul>
+                <li><a class="li" href="{% url 'index' %}">Home</a></li>
+                <li><a class="li" href="{% url 'cars' %}">car</a></li>
+                <li><a class="li" href="{% url 'about' %}">About</a></li>
+                <li><a class="li" href="{% url 'contact' %}">contact</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <form class="form" action="{% url 'search' %}" method="GET" >
+            <input  name="search" placeholder="search car">
+            <button type="submit">search</button>
+        </form>
+        </div>
+
+
+        <div class="log-reg"><a href="{% url 'register' %}">Login/Register</a></div>
+        <div class="logout"><a href="">logout</a></div>
+       </div>
+    </div>
+<div class="tittle"><h1>GREASE MONKEY</h1></div>
+<div class="cont">
+<div class="cent">
+    <h1>FIND YOU'R DREAM CAR</h1>
+    <h1>FIND YOU'R DREAM CAR</h1>
+</div>
+</div>
+    <div class="booknow"><a href="{% url 'cars' %}" class="anchor">BUY NOW→</a></div>
+
+    </div>
+
+<div class="flipcard">
+<div class="maincontainer">
+<div class="thecard">
+
+        <div class="thefront">  <img src="{% static 'img/gclass.jpeg' %}" alt="" class="img"></div>
+    
+        <div class="theback"> <img src="{% static 'img/thar.jpeg' %}" alt="" class="img"></div>
+</div>
+</div>
+
+
+<div class="maincontainer2">
+    <div class="thecard">
+    
+            <div class="thefront">  <img src="{% static 'img/bmwcar.jpeg' %}" alt="" class="img"></div>
+        
+            <div class="theback"> <img src="{% static 'img/jimny.jpeg' %}" alt="" class="img"></div>
+    </div>
+    </div>
+
+    <div class="maincontainer">
+        <div class="thecard">
+        
+                <div class="thefront">  <img src="{% static 'img/defender.jpeg' %}" alt="" class="img"></div>
+            
+                <div class="theback"> <img src="{% static 'img/rangerover.jpeg' %}" alt="" class="img"></div>
+        </div>
+        </div>
+
+</div>
+
+<div class="ourcar">
+    <div class="head"><h1>Click here to see our Car's</h1></div>
+    <div class="button"><a href="{% url 'cars' %}"><button>OUR CAR→</button></a></div>
+</div>
+
+ <div class="br-tittle"><h1>Our poppular Brand's</h1></div>
+
+<div class="main-logo">
+ <div class="brand">
+    <div class="logo-card">
+        <div class="car-logo1"> <img src="{% static 'img/audi.jpg' %}" alt="" class="img"></div>
+        <div class="car-logo2"> <img src="{% static 'img/audi.jpg' %}" alt="" class="img"></div>
+    </div>
+    
+ </div>
+ 
+ <div class="brand">
+    <div class="logo-card">
+        <div class="car-logo1"> <img src="{% static 'img/benz.jpg' %}" alt="" class="img"></div>
+        <div class="car-logo2"> <img src="{% static 'img/benz.jpg' %}" alt="" class="img"></div>
+    </div>
+    
+ </div>
+ 
+ 
+ 
+ <div class="brand">
+    <div class="logo-card">
+        <div class="car-logo1"> <img src="{% static 'img/bmw.jpg' %}" alt="" class="img"></div>
+        <div class="car-logo2"> <img src="{% static 'img/bmw.jpg' %}" alt="" class="img"></div>
+    </div>
+    
+ </div>
+ 
+ 
+ 
+ <div class="brand">
+    <div class="logo-card">
+        <div class="car-logo1"> <img src="{% static 'img/ford.jpg' %}" alt="" class="img"></div>
+        <div class="car-logo2"> <img src="{% static 'img/ford.jpg' %}" alt="" class="img"></div>
+    </div>
+    
+ </div>
+ 
+ 
+ 
+ <div class="brand">
+    <div class="logo-card">
+        <div class="car-logo1"> <img src="{% static 'img/lambo.jpg' %}" alt="" class="img"></div>
+        <div class="car-logo2"> <img src="{% static 'img/lambo.jpg' %}" alt="" class="img"></div>
+    </div>
+    
+ </div>
+ 
+ 
+ 
+ <div class="brand">
+    <div class="logo-card">
+        <div class="car-logo1"> <img src="{% static 'img/lexus.jpg' %}" alt="" class="img"></div>
+        <div class="car-logo2"> <img src="{% static 'img/lexus.jpg' %}" alt="" class="img"></div>
+    </div>
+    
+ </div>
+ 
+ 
+ 
+ <div class="brand">
+    <div class="logo-card">
+        <div class="car-logo1"> <img src="{% static 'img/mitsu.jpg' %}" alt="" class="img"></div>
+        <div class="car-logo2"> <img src="{% static 'img/mitsu.jpg' %}" alt="" class="img"></div>
+    </div>
+    
+ </div>
+ 
+ 
+ 
+ <div class="brand">
+    <div class="logo-card">
+        <div class="car-logo1"> <img src="{% static 'img/nissan.jpg' %}" alt="" class="img"></div>
+        <div class="car-logo2"> <img src="{% static 'img/nissan.jpg' %}" alt="" class="img"></div>
+    </div>
+    
+ </div>
+ 
+ 
+ 
+ <div class="brand">
+    <div class="logo-card">
+        <div class="car-logo1"> <img src="{% static 'img/porche.jpg' %}" alt="" class="img"></div>
+        <div class="car-logo2"> <img src="{% static 'img/porche.jpg' %}" alt="" class="img"></div>
+    </div>
+    
+ </div>
+ 
+ 
+ 
+ <div class="brand">
+    <div class="logo-card">
+        <div class="car-logo1"> <img src="{% static 'img/wolkz.jpg' %}" alt="" class="img"></div>
+        <div class="car-logo2"> <img src="{% static 'img/wolkz.jpg' %}" alt="" class="img"></div>
+    </div>
+    
+ </div>
+ 
+ 
+</div>
+
+ 
+ 
+
+<footer><h1>GREASE MONKEY</h1>
+    <div class="in"><h3>We sell Dream's here</h3></div>
+    <div class="sm-nav">
+<div class="copy">Copyright © 2023 Alkesh Sajeevan</div>
+        <div class="contact">
+        <div class="email">alkeshsajeevana@gmail.com</div>
+        <div class="phn">+91 7012787883</div>
+    </div>
+
+</footer>
+</body>
+</html>

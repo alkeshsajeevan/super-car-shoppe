@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% block style %} {% endblock %}
+</head>
+<body>
+
+<div class="back-bt">
+    <ul class="un-li">
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'cars' %}">Cars</a></li>
+        <li>
+            <form action="{% url 'search' %}">
+            <input type="text" name="search" placeholder="find car">
+        <button type="submit">search</button>
+    </form></li>
+    </ul>
+</div>
+
+
+
+
+
+    {% block content %} {% endblock %}
+</body>
+</html>

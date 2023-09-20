@@ -1,0 +1,426 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+   
+}
+body::-webkit-scrollbar{
+    width: 10px;
+} 
+body::-webkit-scrollbar-track{
+
+    display: none;
+} 
+body::-webkit-scrollbar-thumb{
+   
+  background-color: #918b8b;
+} 
+.container{
+    width: 100%;
+    height: 800px;
+    background-image: url("/static/img//carbg2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sm-nav{
+    width:100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    background-color:rgba(15, 14, 14, 0.362);
+    align-items: center;
+}
+.contact{
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+    font-family: monospace;
+}
+.email{
+    letter-spacing: 1.5px;
+}
+.phn{
+    letter-spacing: 1.5px;
+}
+.soc-mid{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.soc-mid a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+
+}
+.bg-nav{
+    width: 100%;
+    height: 120px;
+    color: transparent;
+    /* border: 1px solid white; */
+    align-items: center;
+    font-size: 25px;
+    margin-top: 20px;
+    /* position: sticky;
+    top: 0px; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+.nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+   align-items: center;
+    margin: auto;
+    
+
+    
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 2px;
+    background-image: url("/static/img/logo.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+
+}
+.hcac{
+    width: 400px;
+    text-align: center;
+
+    
+}
+.hcac ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.hcac ul li{
+    margin-left: 15px;
+}
+.li{
+    text-decoration: none;
+    font-size: 26px;
+    transition: all .1s;
+
+}
+.li:hover{
+    text-shadow:2px 1px 2px rgba(255, 255, 255, 0.575);
+    font-size: 26px;
+    border-bottom: 3px solid white;
+
+
+}
+/* .form{
+    width: fit-content;
+    height: fit-content;
+}
+.form:hover{
+    box-shadow: 2px 0px 2px 2px white;
+
+} */
+.search input {
+   color: rgb(0, 0, 0);
+   
+}
+.search input :hover{
+    box-shadow: 2px 0px 2px 2px white;
+}
+.search button {
+    background-color: transparent;
+    color: white;
+}
+.log-reg a{
+    text-decoration: none;
+}
+.log-reg a:hover{
+    border-bottom: 3px solid white;
+    text-shadow:2px 1px 2px rgba(255, 255, 255, 0.575);
+}
+.logout a{
+    text-decoration: none;
+}
+.logout a:hover{
+    border-bottom: 3px solid white;
+    text-shadow:2px 1px 2px rgba(255, 255, 255, 0.575);
+}
+.tittle{
+
+margin:20px;
+font-size: 80px;
+text-align: center;
+
+
+}
+.tittle h1{
+   
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+color:transparent;
+background-image: linear-gradient(rgba(255, 255, 255, 0.927),rgba(255, 255, 255, 0.571));
+background-repeat: no-repeat;
+-webkit-text-stroke: 1px rgb(255, 255, 255);
+-webkit-background-clip: text;
+background-position: -1410px 0;
+animation: backcolor 6s linear infinite alternate;
+
+}
+@keyframes backcolor{
+    100%{
+    background-position:0 0;
+    }
+}
+.cont{
+    width: 100%;
+    height: 80px;
+}
+.cent {
+    text-align: center;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left:300PX;   
+    margin-top: 50px;
+}
+.cent h1{
+    position: absolute;
+    color:#fff;
+    font-size: 80px;
+  
+
+}
+.cent h1:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+
+
+}
+.cent h1:nth-child(2){
+   color: rgb(255, 255, 255);
+   animation: animate 3s ease-in-out infinite;
+}
+@keyframes animate{
+    0%,100%{
+        clip-path: polygon(0% 45%,15% 44%,32% 50%,54% 60%,70% 61%,84% 59%,100% 52%,100% 100%,0% 100%);
+    }
+    50%{
+        clip-path: polygon(0% 60%,16% 65%,34% 66%,51% 62%,67% 50%,84% 45%,100% 46%,100% 100%,0% 100%);
+    }
+}
+.booknow{
+    width: 100%;
+    margin: 30px auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.booknow a{
+    width: 290px;
+    height: 60px;
+    padding: 5px;
+    border: 0px solid transparent;
+    border-radius: 5px;
+    background-color: rgba(255, 0, 0, 0.905);
+    color: white;
+    font-size: 38px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: all .3s ease;
+  
+}
+.booknow a:hover{
+    width: 400px;
+    font-size: 42px;
+    padding: 0px;
+    background-color:rgb(240, 6, 6);
+    box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.829);
+    letter-spacing: 5px;
+}
+
+.flipcard{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.maincontainer{
+    position: relative;
+    width: 33%;
+    height: 320px;
+    top: -60px;
+   
+}
+.maincontainer2{
+    position: relative;
+    width: 33%;
+    height: 320px;
+    top: -100px;
+   
+}
+.thecard{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+  
+
+}
+.thecard:hover{
+    transform: rotateY(180deg);
+}
+.thefront{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: #918b8b;
+}
+.theback{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: #918b8b;
+    transform: rotateY(180deg);
+}
+.img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.ourcar{
+    width: 100%;
+    height: 200px;
+   
+}
+.head h1{
+   font-size: 70px;
+   color: #4c4b4b;
+   margin-left: 10px;
+   font-family: monospace;
+   text-shadow: 2px 2px 2px grey;
+
+}
+.button button{
+    width: 300px;
+    height: 60px;
+    padding: 5px;
+    border: 0px solid transparent;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-size: 38px;
+    margin-left: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 5px;
+    transition: all .5s;
+}
+.button button:hover{
+    width:300px ;
+    background-color:rgb(232, 38, 38);
+
+    letter-spacing: 10px;
+}
+.br-tittle{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.br-tittle h1{
+    color: rgba(0, 0, 0, 0.766);
+    font-family: sans-serif;
+    text-shadow: 2px 2px 2px grey;
+}
+/* s */
+
+.main-logo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.brand{
+    position: relative;
+    width: 100%;
+    height: 150px;   
+}
+.logo-card{
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+  
+
+}
+.logo-card:hover{
+    transform: rotateY(180deg);
+}
+.car-logo1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: #918b8b;
+}
+.car-logo2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: #918b8b;
+    transform: rotateY(180deg);
+}
+.car-logo1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: .5px solid grey;
+object-position: center;
+}
+    
+.car-logo2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: .5px solid grey;}
+/* ed */
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    width: 100%;
+    height: 200px;
+    border-left: auto;
+    background-color:rgba(7, 4, 40, 0.885) ;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 50px;
+}
+footer p{
+    color: white;
+    margin-top: 20px;
+}

@@ -1,0 +1,61 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+
+{% block title %}About {% endblock %}
+{% block style %} 
+
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    {% endblock %}
+
+    {% block content %} 
+
+  <div class="about-container">
+   <div class=><h1>About us</h1></div>
+    <div class="h2"><h2>Discover [GREASE MONKEY]: Your Premier Destination for Pre-Owned Cars</h2></div> 
+
+        <h2>At [GREASE MONKEY], we're more than just a place to buy used cars; we're a community of 
+            car enthusiasts who share your passion for quality vehicles. With years of experience in the industry, we've fine-tuned
+             the art of providing exceptional service and a vast selection of pre-owned cars.</h2>
+             <div class="whowe">
+<h3>Who We Are:</h3>
+             <ul>
+                <li>A team of experts dedicated to finding the best pre-owned vehicles for you.</li>
+                <li>A one-stop-shop for everything related to second-hand cars.</li>
+                <li>A trusted name in the automotive market. </li>
+             </ul>
+            </div>
+        
+  <div class="promise">
+       <h3> Our Promise:</h3>
+       <ul>
+        <li>Offering an extensive inventory of handpicked, high-quality cars.</li>
+        <li>Ensuring every vehicle meets our strict standards for safety and reliability.</li>
+        <li>Treating each customer with respect, transparency, and professionalism.</li>
+       </ul>
+    </div>
+    <div class="whywe">
+    
+       <h3> Why GREASE MONKEY Stands Out:</h3>
+       <ul>
+        <li>
+        .We simplify the process of buying a used car.
+
+        </li>
+        <li>
+        .Our commitment to customer satisfaction is unwavering.
+
+        </li>
+        <li>
+        .We provide you with the information and tools you need to make the right choice.
+
+        </li>
+        <li>
+        .Thank you for considering [Your Website Name] as your go-to destination for second-hand cars. We look forward to helping you find the perfect vehicle that suits your lifestyle and preferences. Start your journey with us today!
+
+        </li>
+       </ul>
+    
+    </div>  
+
+    </div>
+    {% endblock %}

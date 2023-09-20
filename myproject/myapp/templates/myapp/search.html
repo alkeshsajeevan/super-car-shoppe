@@ -1,0 +1,49 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+
+
+
+
+{% block title %} 
+cars 
+{% endblock %}
+
+  {% block style %}
+  
+  <link rel="stylesheet" href="{% static 'css/search.css' %}">
+  
+  
+  {% endblock %}
+{% block content %}
+
+<h1 class="hd">you searched for : {{search}}</h1>
+  <div class="container">
+
+    {% for car in cars %}
+    <div class="car-card">
+      <div class="detail-card">
+      <div class="car-img"><img src="{{car.image1.url }}" alt=""></div>
+      <div class="car-brand"><h1>{{car.make}} </h1></div>
+      <div class="car-name"><h2>{{car.name}} </h2></div>
+      <div class="other-detail">
+        <ul>
+          <li>{{car.kilometer}} k/m</li>
+          <p>|</p>
+          <li>{{car.fuel}} </li>
+          <p>|</p>
+
+          <li> {{car.location}}</li>
+        </ul>
+      </div>
+      <div class="car-price"><h3>${{car.price}} </h3></div>
+      <div class="detail-button"><a class="btn" href="{% url 'detail' car.id %}">←Get more detail→</a></div>
+    </div>
+  </div>
+  {% endfor %}
+  
+
+  </div>
+  
+  
+  
+  {% endblock %}

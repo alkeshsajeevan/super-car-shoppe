@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+.banner{
+  width: 90%;
+  height: 400px;
+  margin: 10px auto; 
+
+}
+.banner img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 15px;
+}
+.card-head{
+  font-size: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px 15px;
+}
+
+.container{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  border-radius: 10px;
+}
+.car-card{
+  width: 30%;
+  height: 56  0px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 2px rgb(153, 144, 144);
+  margin: 20px 20px;
+}
+.detail-card{
+  width: 95%;
+  height: 98%;
+  border-radius: 5px;
+  margin:2px auto;
+  padding: 5px;
+}
+.car-img{
+  width: 100%;
+  height: 250px;
+}
+.car-img img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+  
+}
+.car-brand h1{
+  margin-left: 5px;
+  margin-top: 10px;
+  font-size: 35px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+.car-name h2{
+  margin-left: 5px;
+  font-size: 25px;
+  color: rgb(47, 46, 46) ;
+  font-weight: 400;
+
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.other-detail{
+  width: 100%;
+  margin-top: 20px;
+}
+.other-detail ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  list-style-type:none;
+  margin-left: 5px;
+
+  
+}
+.other-detail li{
+color: rgb(149, 146, 146);
+  font-size: 20px;
+}
+.car-price h3{
+  color: rgb(55, 55, 227);
+  margin-left: 10px;
+  margin-top: 20px;
+  font-weight: bold ;
+  font-size: 20px;
+  font-family: monospace  ;
+}
+.detail-button{
+  width: 100%;
+  height: 50px;
+margin-top: 30px;
+}
+
+.btn{
+  width: 400px;
+  height: 50px;
+  display: block;
+  margin: auto;
+  border: 0px solid transparent;
+  border-radius: 5px;
+  background-color: rgba(255, 0, 0, 0.905);
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all .3s ease;
+}
+.btn:hover{
+  width: 410px;
+  font-size: 30px;
+  padding: 0px;
+  background-color:rgb(240, 6, 6);
+  box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.829);
+  letter-spacing: 5px;
+}

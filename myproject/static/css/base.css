@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.back-bt{
+    width: 100%;
+    height: 50px;
+    background-color: #4a53b7  ;
+    align-items: center;
+    text-align: center;
+    position: sticky;
+    top: 0px;
+}
+.un-li{
+
+    display: flex;
+  justify-content: space-evenly;
+    list-style: none;
+  
+}
+.un-li li{
+    margin-left: 30px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+li a{
+   
+    text-decoration: none;
+color: rgb(255, 255, 255);
+}
+
